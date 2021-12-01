@@ -1,7 +1,8 @@
 import React from 'react';
 import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Button from '@mui/material/Button';
+
+import GradientTab from './GradientTab';
+import ResumeBtn from './ResumeBtn';
 
 const Nav = () => {
     return (
@@ -10,21 +11,13 @@ const Nav = () => {
             // onChange={}
             aria-label='Navigation'
             centered
+            // orientation='vertical'
+            style={{ margin: '10px' }}
         >
-            <Tab label='About Me' href='#about-me' style={{ color: 'white' }} />
-            <Tab
-                label='My Projects'
-                href='#my-projects'
-                style={{ color: 'white' }}
-            />
-            <Tab
-                label='Work Experience'
-                href='#work-experience'
-                style={{ color: 'white' }}
-            />
-            <Button variant='outlined' style={{ color: 'white' }}>
-                Download My Resume
-            </Button>
+            <GradientTab name='My Projects' to='#my-projects' />
+            <GradientTab name='Work Experience' to='#work-experience' />
+            <GradientTab name='Contact Me' to='#contact-me' />
+            <ResumeBtn />
         </Tabs>
     );
 };
