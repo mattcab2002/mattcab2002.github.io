@@ -39,12 +39,18 @@ const MobileContactForm = () => {
             </div>
             <div style={{ display: 'flex' }}>
                 <TextField
-                    id='outlined-basic'
+                    id='filled-basic'
                     label='Your Message'
-                    variant='outlined'
+                    variant='filled'
                     multiline
                     rows={6}
-                    style={{ flexGrow: '1', margin: '8px' }}
+                    style={{
+                        flexGrow: '1',
+                        margin: '8px',
+                        borderRadius: '5px',
+                        background: 'white',
+                        background: 'rgba(255,255,255,0.8)',
+                    }}
                 />
             </div>
             <div

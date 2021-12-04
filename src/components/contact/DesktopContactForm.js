@@ -11,10 +11,11 @@ const DesktopContactForm = () => {
         <div
             style={{
                 background: 'linear-gradient(to right, #faa66a, #fd63a3)',
-                width: '40vw',
+                width: '50vw',
                 margin: '0 auto',
                 padding: '20px',
-                borderRadius: '8px',
+                borderBottomLeftRadius: '20px',
+                borderTopRightRadius: '20px',
             }}
         >
             <div
@@ -35,7 +36,13 @@ const DesktopContactForm = () => {
                     variant='outlined'
                     multiline
                     rows={8}
-                    style={{ flexGrow: '1', margin: '8px' }}
+                    style={{
+                        flexGrow: '1',
+                        margin: '8px',
+                        borderRadius: '5px',
+                        background: 'white',
+                        background: 'rgba(255,255,255,0.8)',
+                    }}
                 />
             </div>
             <div
@@ -46,7 +53,7 @@ const DesktopContactForm = () => {
                 }}
             >
                 <Button
-                    variant='outlined'
+                    variant='filled'
                     style={{
                         color: 'black',
                         background: 'white',
