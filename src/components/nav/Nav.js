@@ -4,7 +4,7 @@ import React from 'react';
 // Components
 import Tabs from '@mui/material/Tabs';
 import GradientTab from './GradientTab';
-import ResumeBtn from './ResumeBtn';
+import Contactbtn from './Contactbtn';
 
 const Nav = () => {
     return (
@@ -14,12 +14,19 @@ const Nav = () => {
             aria-label='Navigation'
             centered
             // orientation='vertical'
-            style={{ margin: '10px' }}
+            style={{
+                position: 'fixed',
+                top: '0px',
+                width: '100%',
+                background: '#040440',
+                zIndex: '100',
+                paddingBottom: '12px',
+            }}
         >
+            <GradientTab name='About Me' to='#about-me' />
             <GradientTab name='My Projects' to='#my-projects' />
             <GradientTab name='Work Experience' to='#work-experience' />
-            <GradientTab name='Contact Me' to='#contact-me' />
-            <ResumeBtn />
+            <Contactbtn />
         </Tabs>
     );
 };
