@@ -1,9 +1,12 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
-const Project = () => {
+const Projects = () => {
     return (
-        <div style={{ background: '#080444' }} id='my-projects'>
+        <div
+            style={{ background: '#080444', padding: '40px 0px' }}
+            id='my-projects'
+        >
             <h3
                 style={{
                     textAlign: 'center',
@@ -27,7 +30,13 @@ const Project = () => {
                 </span>{' '}
                 I'm Working On
             </h3>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    marginTop: '40px',
+                }}
+            >
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />
@@ -36,4 +45,4 @@ const Project = () => {
     );
 };
 
-export default Project;
+export default Projects;

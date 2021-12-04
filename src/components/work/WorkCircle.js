@@ -2,13 +2,13 @@ import React from 'react';
 
 import WorkIcon from '@mui/icons-material/Work';
 
-const workCircle = () => {
+const WorkCircle = () => {
     return (
         <div
             style={{
                 background: 'white',
                 borderRadius: '50%',
-                width: '50px',
+                minWidth: '50px',
                 height: '50px',
                 position: 'relative',
             }}
@@ -27,4 +27,4 @@ const workCircle = () => {
     );
 };
 
-export default workCircle;
+export default WorkCircle;

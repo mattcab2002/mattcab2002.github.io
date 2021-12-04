@@ -6,12 +6,21 @@ const WorkElement = (props) => {
     return (
         <div style={{ display: 'flex' }}>
             <WorkCircle />
-            <div style={{ color: 'white', marginLeft: '14px' }}>
+            <div
+                style={{
+                    color: 'white',
+                    marginLeft: '30px',
+                    width: '25vw',
+                    minHeight: '74px',
+                }}
+            >
                 <span>
-                    {props.position} @ {props.workplace}
+                    {props.position} @ {props.company_name}{' '}
+                    <span> {props.length} </span>
                 </span>
-                <small style={{ display: 'block' }}> ({props.date})</small>
-                <p style={{ marginTop: '0px' }}>{props.description}</p>
+                <small style={{ display: 'block', margintop: '8px' }}>
+                    {props.description}
+                </small>
             </div>
         </div>
     );

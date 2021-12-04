@@ -4,7 +4,7 @@ import React from 'react';
 // Components
 import ContactForm from './ContactForm';
 
-const Contact = (props) => {
+const Contact = () => {
     return (
         <div
             style={{
@@ -14,7 +14,7 @@ const Contact = (props) => {
                 fontWeight: '400',
                 fontSize: '1rem',
                 background: '#040440',
-                marginBottom: '80px',
+                padding: '40px 0px',
             }}
             id='contact-me'
         >
