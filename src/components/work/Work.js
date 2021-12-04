@@ -8,7 +8,7 @@ export default class Work extends React.Component {
         jobs: [
             {
                 position: 'Web Developer',
-                length: '[Nov. 2021 - Present]',
+                length: '(Nov. 2021 - Present)',
                 company_name: 'Préts Québec',
                 description:
                     'Handle all web development regarding French website. Child company of Loans Canada.',

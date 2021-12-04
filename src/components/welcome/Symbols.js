@@ -23,7 +23,7 @@ const Symbols = () => {
                 style={{
                     position: 'relative',
                     right: '-110px',
-                    top: '45px',
+                    top: '35px',
                 }}
             >
                 <LinkedinMed link='https://www.linkedin.com/in/matthew-a-cabral/' />
@@ -32,7 +32,7 @@ const Symbols = () => {
                 style={{
                     position: 'relative',
                     right: '-220px',
-                    top: '140px',
+                    top: '120px',
                 }}
             >
                 <GithubMed link='https://github.com/mattcab2002' />
@@ -40,8 +40,8 @@ const Symbols = () => {
             <div
                 style={{
                     position: 'relative',
-                    right: '-130px',
-                    top: '230px',
+                    right: '-120px',
+                    top: '180px',
                 }}
             >
                 <DevpostMed link='https://devpost.com/mattcab2002?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav' />
