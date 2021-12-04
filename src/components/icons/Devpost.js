@@ -2,27 +2,13 @@ import React from 'react';
 
 const Devpost = (props) => {
     return (
-        <div style={{ position: 'relative', marginLeft: '4px' }}>
-            <iframe
+        <a target='_blank' href={props.link}>
+            <img
                 src='http://nealrs.github.io/devpost-follow-button/icon/devpost.svg'
-                frameBorder='0'
-                scrolling='0'
-                width='36px'
                 height='36px'
-            ></iframe>
-            <a
-                href={props.link}
-                style={{
-                    position: 'absolute',
-                    top: '0',
-                    left: '0',
-                    display: 'inline-block',
-                    width: '36px',
-                    height: '36px',
-                    zIndex: '5',
-                }}
-            ></a>
-        </div>
+                width='36px'
+            />
+        </a>
     );
 };
 

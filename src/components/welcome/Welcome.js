@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Resumebtn from './ResumeBtn';
+import Symbols from './Symbols';
 
 const Welcome = () => {
     return (
@@ -40,9 +41,11 @@ const Welcome = () => {
                 >
                     software engineering
                 </span>{' '}
-                student @ McGill University with some web development knowledge!
+                student @ McGill University with some knowledge in web
+                development!
             </p>
             <Resumebtn />
+            <Symbols />
         </div>
     );
 };
