@@ -8,28 +8,28 @@ export default class Work extends React.Component {
         jobs: [
             {
                 position: 'Web Developer',
-                length: '[November 2021 - Now]',
-                company_name: 'Prets Quebec (Child company of Loans Canada)',
+                length: '[Nov. 2021 - Present]',
+                company_name: 'Préts Québec',
                 description:
-                    'Handle all web development regarding French website.',
+                    'Handle all web development regarding French website. Child company of Loans Canada.',
             },
             {
                 position: 'Web Developer',
-                length: '(April 2021 - Now)',
+                length: '(Apr. 2021 - Present)',
                 company_name: 'Loans Canada',
                 description:
                     'Developing on smaller projects handling queries from MySQL, while developing with PHP, Laravel, and WordPress.',
             },
             {
                 position: 'Co-Founder',
-                length: '(April 2021 - Now)',
+                length: '(Apr. 2021 - Present)',
                 company_name: 'Exterior Solutions QC inc.',
                 description:
                     'Co-founded a pressure washing company. Managed a team of door-to-door salesman and numerous social media platforms to obtain clients.',
             },
             {
                 position: 'Junior Front End Developer',
-                length: '(February 2021 - August 2021)',
+                length: '(Feb. 2021 - Aug. 2021)',
                 company_name: 'Fygo',
                 description:
                     'Contracted to replicate the IOS app as a web page to integrate app clips for Android users. Learnt Svelte, Sveltekit, Tailwinds CSS, and Google Firebase in order to be accustomed to the team.',
@@ -42,9 +42,6 @@ export default class Work extends React.Component {
                 <h3
                     style={{
                         textAlign: 'center',
-                        fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
-                        fontWeight: '700',
-                        fontSize: '19px',
                         textAlign: 'center',
                         color: 'white',
                     }}
@@ -67,9 +64,10 @@ export default class Work extends React.Component {
                         display: 'flex',
                         marginTop: '60px',
                         justifyContent: 'center',
+                        fontSize: '0.8rem',
                     }}
                 >
-                    <div>
+                    <div style={{ margin: '0px 40px' }}>
                         {this.state.jobs.slice(0, 3).map((job) => (
                             <span key={this.state.jobs.indexOf(job)}>
                                 <WorkElement

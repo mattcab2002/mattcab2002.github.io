@@ -14,7 +14,8 @@ const GradientTab = (props) => {
                 opacity: '1',
                 backgroundImage: 'linear-gradient(to right, #faa66a, #fd63a3)',
                 backgroundClip: 'text',
-                paddingBottom: '0px',
+                fontSize: '0.7rem',
+                marginTop: '10px',
             }}
         />
     );

@@ -11,7 +11,7 @@ const DesktopContactForm = () => {
         <div
             style={{
                 background: 'linear-gradient(to right, #faa66a, #fd63a3)',
-                width: '50vw',
+                width: '40vw',
                 margin: '0 auto',
                 padding: '20px',
                 borderBottomLeftRadius: '20px',
@@ -35,7 +35,7 @@ const DesktopContactForm = () => {
                     label='Your Message'
                     variant='outlined'
                     multiline
-                    rows={8}
+                    rows={5}
                     style={{
                         flexGrow: '1',
                         margin: '8px',

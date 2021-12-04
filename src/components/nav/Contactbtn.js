@@ -15,6 +15,7 @@ const ResumeBtn = () => {
                     right: '15vw',
                     background: 'linear-gradient(to right, #faa66a, #fd63a3)',
                     marginTop: '10px',
+                    fontSize: '0.7rem',
                 }}
             >
                 Contact Me

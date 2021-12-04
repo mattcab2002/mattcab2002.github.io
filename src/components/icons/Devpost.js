@@ -7,8 +7,8 @@ const Devpost = (props) => {
                 src='http://nealrs.github.io/devpost-follow-button/icon/devpost.svg'
                 frameBorder='0'
                 scrolling='0'
-                width='24px'
-                height='24px'
+                width='36px'
+                height='36px'
             ></iframe>
             <a
                 href={props.link}
@@ -17,8 +17,8 @@ const Devpost = (props) => {
                     top: '0',
                     left: '0',
                     display: 'inline-block',
-                    width: '24px',
-                    height: '24px',
+                    width: '36px',
+                    height: '36px',
                     zIndex: '5',
                 }}
             ></a>

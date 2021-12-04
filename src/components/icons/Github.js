@@ -3,7 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Github = (props) => {
     return (
-        <a href={props.link}>
+        <a target='_blank' href={props.link}>
             <GitHubIcon />
         </a>
     );

@@ -20,7 +20,6 @@ const Nav = () => {
                 width: '100%',
                 background: '#040440',
                 zIndex: '100',
-                paddingBottom: '12px',
             }}
         >
             <GradientTab name='About Me' to='#about-me' />

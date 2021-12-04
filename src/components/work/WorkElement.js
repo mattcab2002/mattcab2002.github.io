@@ -14,11 +14,9 @@ const WorkElement = (props) => {
                     minHeight: '74px',
                 }}
             >
-                <span>
-                    {props.position} @ {props.company_name}{' '}
-                    <span> {props.length} </span>
-                </span>
-                <small style={{ display: 'block', margintop: '8px' }}>
+                {props.position} @ {props.company_name}{' '}
+                <small style={{ display: 'block' }}> {props.length} </small>
+                <small style={{ display: 'block', margin: '10px 0px' }}>
                     {props.description}
                 </small>
             </div>

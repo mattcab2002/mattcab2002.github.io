@@ -18,7 +18,7 @@ export default class Projects extends React.Component {
                 imageURL:
                     'https://user-images.githubusercontent.com/64427472/135642815-3b00ef18-6d99-416d-bdb2-9a616f8df943.PNG',
                 description:
-                    'Through the use of Python and XML data API, this project contains files that compare the odds of the same sporting event across different sportsbooks in order to find a sure bet, once found it is communicated through form of a text message API to subscribers.',
+                    'Through the use of Python and XML data API, this project compares the odds of the same sporting event across different sportsbooks in order to find a sure bet, once found it is communicated through form of a text message API to subscribers.',
                 github: 'https://github.com/mattcab2002/arbitrage-repo',
             },
             {
@@ -38,10 +38,6 @@ export default class Projects extends React.Component {
             >
                 <h3
                     style={{
-                        textAlign: 'center',
-                        fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
-                        fontWeight: '700',
-                        fontSize: '19px',
                         textAlign: 'center',
                         color: 'white',
                     }}
@@ -64,6 +60,7 @@ export default class Projects extends React.Component {
                         display: 'flex',
                         justifyContent: 'center',
                         marginTop: '40px',
+                        fontSize: '0.6rem',
                     }}
                 >
                     {this.state.projects.map((project) => (

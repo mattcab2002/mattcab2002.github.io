@@ -40,8 +40,7 @@ const Welcome = () => {
                 >
                     software engineering
                 </span>{' '}
-                student @ Mcgill University with some knowledge in web
-                development!
+                student @ McGill University with some web development knowledge!
             </p>
             <Resumebtn />
         </div>

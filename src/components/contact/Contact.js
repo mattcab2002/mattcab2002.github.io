@@ -10,9 +10,6 @@ const Contact = () => {
             style={{
                 textAlign: 'center',
                 color: 'white',
-                fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
-                fontWeight: '400',
-                fontSize: '1rem',
                 background: '#040440',
                 padding: '40px 0px',
             }}
@@ -33,7 +30,7 @@ const Contact = () => {
                     Me
                 </span>
             </h3>
-            <p>
+            <p style={{ fontSize: '0.8rem' }}>
                 Feel free to fill out the form below to contact me about any
                 questions you may have!
             </p>
