@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
                 imageURL:
                     'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/727/891/datas/medium.jpg',
                 description:
-                    'Using artificial intelligence and a chat service Lia serves as an interactive memory aid for those who are suffering memory loss. ',
+                    'Using artificial intelligence integrated with python and a chat service through the web application, Lia serves as an interactive memory aid for those who are suffering memory loss. Lia facilitates the communication for memory loss patients by teaching itself filler words and phrases.',
                 devpost: 'https://devpost.com/software/lia',
                 github: 'https://github.com/mattcab2002/Liassistant',
             },
@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
                 imageURL:
                     'https://www.mcgill.ca/engineering/files/engineering/styles/hd/public/formula_electric_0.png?itok=ghH_1nlT&timestamp=1627928294',
                 description:
-                    'Currently working on the Software team of MFE in order to prepare for this years race!',
+                    'Currently working on the Software team of MFE in order to prepare for this years race! Writing tests in C and Python for runs on the dyno in order to attain peak performance.',
             },
         ],
     };

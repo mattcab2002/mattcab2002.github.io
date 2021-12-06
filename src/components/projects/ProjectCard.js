@@ -26,7 +26,7 @@ const ProjectCard = (props) => {
                 height='220'
                 image={props.imageURL}
             />
-            <CardContent style={{ minHeight: '160px' }}>
+            <CardContent style={{ minHeight: '160px', lineHeight: '0.8rem' }}>
                 {props.description}
             </CardContent>
             {(props.github || props.devpost) && (

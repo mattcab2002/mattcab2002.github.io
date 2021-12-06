@@ -11,7 +11,7 @@ const Welcome = () => {
                 color: 'white',
                 margin: '100px 0px',
                 padding: '100px 0px',
-                marginLeft: '15vw',
+                marginLeft: '12vw',
             }}
         >
             <h2>
@@ -41,8 +41,8 @@ const Welcome = () => {
                 >
                     software engineering
                 </span>{' '}
-                student @ McGill University with some knowledge in web
-                development!
+                student @ McGill University with professional{' '}
+                <p>web development experience!</p>
             </p>
             <Resumebtn />
             <Symbols />

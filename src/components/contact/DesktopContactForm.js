@@ -11,7 +11,7 @@ const DesktopContactForm = () => {
         <div
             style={{
                 background: 'linear-gradient(to right, #faa66a, #fd63a3)',
-                width: '40vw',
+                width: '55vw',
                 margin: '0 auto',
                 padding: '20px',
                 borderBottomLeftRadius: '20px',

@@ -17,7 +17,7 @@ const Nav = () => {
             style={{
                 position: 'fixed',
                 top: '0px',
-                width: '100%',
+                width: '100vw',
                 background: '#040440',
                 zIndex: '100',
             }}

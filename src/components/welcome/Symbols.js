@@ -8,11 +8,11 @@ const Symbols = () => {
     return (
         <div
             style={{
-                height: '45vh',
+                height: '420px',
                 width: '90vw',
                 position: 'absolute',
                 top: '10vh',
-                right: '-70vw',
+                right: '-72vw',
                 transform: 'skew(340deg)',
                 borderBottomLeftRadius: '40px',
                 borderTopLeftRadius: '40px',
@@ -22,8 +22,9 @@ const Symbols = () => {
             <div
                 style={{
                     position: 'relative',
-                    right: '-110px',
-                    top: '35px',
+                    right: '-3vw',
+                    top: '3vh',
+                    transform: 'skew(-340deg)',
                 }}
             >
                 <LinkedinMed link='https://www.linkedin.com/in/matthew-a-cabral/' />
@@ -31,8 +32,9 @@ const Symbols = () => {
             <div
                 style={{
                     position: 'relative',
-                    right: '-220px',
-                    top: '120px',
+                    right: '-10vw',
+                    top: '10vh',
+                    transform: 'skew(-340deg)',
                 }}
             >
                 <GithubMed link='https://github.com/mattcab2002' />
@@ -40,8 +42,9 @@ const Symbols = () => {
             <div
                 style={{
                     position: 'relative',
-                    right: '-120px',
-                    top: '180px',
+                    right: '-6vw',
+                    top: '17vh',
+                    transform: 'skew(-340deg)',
                 }}
             >
                 <DevpostMed link='https://devpost.com/mattcab2002?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav' />

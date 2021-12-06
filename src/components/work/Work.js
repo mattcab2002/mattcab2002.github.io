@@ -11,14 +11,14 @@ export default class Work extends React.Component {
                 length: '(Nov. 2021 - Present)',
                 company_name: 'Préts Québec',
                 description:
-                    'Handle all web development regarding French website. Child company of Loans Canada.',
+                    'Handle all web development regarding French content. Child company of Loans Canada.',
             },
             {
                 position: 'Web Developer',
                 length: '(Apr. 2021 - Present)',
                 company_name: 'Loans Canada',
                 description:
-                    'Developing on smaller projects handling queries from MySQL, while developing with PHP, Laravel, and WordPress.',
+                    'Developing on smaller projects for production. Handling queries from MySQL, while developing with PHP, Laravel, and WordPress.',
             },
             {
                 position: 'Co-Founder',
@@ -32,7 +32,7 @@ export default class Work extends React.Component {
                 length: '(Feb. 2021 - Aug. 2021)',
                 company_name: 'Fygo',
                 description:
-                    'Contracted to replicate the IOS app as a web page to integrate app clips for Android users. Learnt Svelte, Sveltekit, Tailwinds CSS, and Google Firebase in order to be accustomed to the team.',
+                    'Contracted to replicate IOS application to integrate app clips for Android users. Learnt Svelte, Sveltekit, Tailwinds CSS, and Google Firebase in order to be accustomed to the team.',
             },
         ],
     };
