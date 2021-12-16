@@ -1,6 +1,5 @@
 {
   "name": "mywebsite",
-  "homepage": "https://mattcab2002.github.io/",
   "version": "1.0.0",
   "description": "My portfolio website",
   "main": "index.js",
