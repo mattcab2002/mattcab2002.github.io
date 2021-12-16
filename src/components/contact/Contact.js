@@ -30,7 +30,13 @@ const Contact = () => {
                     Me
                 </span>
             </h3>
-            <p style={{ fontSize: '0.8rem' }}>
+            <p
+                style={{
+                    fontSize: '0.8rem',
+                    marginLeft: '10px',
+                    marginRight: '10px',
+                }}
+            >
                 Feel free to fill out the form below to contact me about any
                 questions you may have!
             </p>

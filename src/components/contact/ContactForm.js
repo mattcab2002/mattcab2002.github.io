@@ -9,7 +9,6 @@ export default class ContactForm extends React.Component {
     isMobile = () => {
         return window.innerWidth < 768;
     };
-
     render() {
         return (
             <div>

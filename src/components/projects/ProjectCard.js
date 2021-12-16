@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
         <Card
             style={{
                 margin: '0px 30px',
-                width: '300px',
+                width: props.width,
                 background: '#100e51',
                 borderRadius: '8px',
                 color: 'white',

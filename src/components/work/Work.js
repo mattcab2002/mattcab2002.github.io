@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 
-import Connector from './Connector';
 import WorkElement from './WorkElement';
 
 export default class Work extends React.Component {
@@ -36,6 +35,9 @@ export default class Work extends React.Component {
             },
         ],
     };
+    isMobile = () => {
+        return window.innerWidth < 768;
+    };
     render() {
         return (
             <div id='work-experience' style={{ padding: '40px 0px' }}>
@@ -59,50 +61,80 @@ export default class Work extends React.Component {
                         Work Experience
                     </span>
                 </h3>
-                <div
-                    style={{
-                        display: 'flex',
-                        marginTop: '60px',
-                        justifyContent: 'center',
-                        fontSize: '0.8rem',
-                    }}
-                >
-                    <div style={{ margin: '0px 40px' }}>
-                        {this.state.jobs.slice(0, 3).map((job) => (
-                            <span key={this.state.jobs.indexOf(job)}>
-                                <WorkElement
-                                    position={job.position}
-                                    description={job.description}
-                                    company_name={job.company_name}
-                                    length={job.length}
-                                />
-                                {this.state.jobs.indexOf(job) != 2 && (
-                                    <Connector />
-                                )}
-                            </span>
-                        ))}
-                    </div>
-                    {this.state.jobs.length > 3 && (
-                        <div>
-                            {this.state.jobs
-                                .slice(3, this.state.jobs.length)
-                                .map((job) => (
-                                    <span key={this.state.jobs.indexOf(job)}>
-                                        <WorkElement
-                                            position={job.position}
-                                            description={job.description}
-                                            company_name={job.company_name}
-                                            length={job.length}
-                                        />
-                                        {this.state.jobs.indexOf(job) !=
-                                            this.state.jobs.length - 1 && (
-                                            <Connector />
-                                        )}
-                                    </span>
-                                ))}
+                {!this.isMobile() ? (
+                    <div
+                        style={{
+                            display: 'flex',
+                            marginTop: '40px',
+                            justifyContent: 'center',
+                            fontSize: '0.8rem',
+                        }}
+                    >
+                        <div style={{ margin: '0px 40px' }}>
+                            {this.state.jobs.slice(0, 3).map((job) => (
+                                <span key={this.state.jobs.indexOf(job)}>
+                                    <WorkElement
+                                        position={job.position}
+                                        description={job.description}
+                                        company_name={job.company_name}
+                                        length={job.length}
+                                        size='25vw'
+                                    />
+                                </span>
+                            ))}
                         </div>
-                    )}
-                </div>
+                        {this.state.jobs.length > 3 && (
+                            <div>
+                                {this.state.jobs
+                                    .slice(3, this.state.jobs.length)
+                                    .map((job) => (
+                                        <span
+                                            key={this.state.jobs.indexOf(job)}
+                                        >
+                                            <WorkElement
+                                                position={job.position}
+                                                description={job.description}
+                                                company_name={job.company_name}
+                                                length={job.length}
+                                                size='25vw'
+                                            />
+                                        </span>
+                                    ))}
+                            </div>
+                        )}
+                    </div>
+                ) : (
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            marginTop: '60px',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            fontSize: '0.8rem',
+                        }}
+                    >
+                        <div>
+                            {this.state.jobs.map((job) => (
+                                <span
+                                    key={this.state.jobs.indexOf(job)}
+                                    style={{
+                                        display: 'block',
+                                        margin: '20px 0px',
+                                    }}
+                                >
+                                    <WorkElement
+                                        position={job.position}
+                                        description={job.description}
+                                        company_name={job.company_name}
+                                        length={job.length}
+                                        size='50vw'
+                                    />
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
         );
     }

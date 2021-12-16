@@ -11,6 +11,7 @@ const FormInput = (props) => {
             label={props.name}
             variant='filled'
             InputProps={{ disableUnderline: true }}
+            value={props.value}
             style={{
                 flexGrow: '1',
                 margin: '8px',

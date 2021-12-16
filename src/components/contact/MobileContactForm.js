@@ -17,21 +17,12 @@ const MobileContactForm = () => {
                 borderRadius: '8px',
             }}
         >
-            <div>
-                <div
-                    style={{
-                        display: 'flex',
-                    }}
-                >
-                    <FormInput name='Your Name' />
-                </div>
-                <div
-                    style={{
-                        display: 'flex',
-                    }}
-                >
-                    <FormInput name='Your Phone Number' />
-                </div>
+            <div
+                style={{
+                    display: 'flex',
+                }}
+            >
+                <FormInput name='Your Name' />
             </div>
 
             <div style={{ display: 'flex' }}>
@@ -65,7 +56,7 @@ const MobileContactForm = () => {
                     style={{
                         color: 'black',
                         background: 'white',
-                        width: '40%',
+                        width: '60%',
                         padding: '0px',
                     }}
                 >
