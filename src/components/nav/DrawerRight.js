@@ -72,12 +72,7 @@ export default class DrawerRight extends React.Component {
                                             paddingBottom: '0px',
                                         }}
                                     >
-                                        <ListItemText
-                                            primary={text
-                                                .replace('-', ' ')
-                                                .replace(/(?:^|\s)\S/g, (a) =>
-                                                    a.toUpperCase()
-                                                )}
+                                        <span
                                             style={{
                                                 color: 'transparent',
                                                 opacity: '1',
@@ -87,8 +82,15 @@ export default class DrawerRight extends React.Component {
                                                 WebkitBackgroundClip: 'text',
                                                 WebkitTextFillColor:
                                                     'transparent',
+                                                margin: '10px 0px',
                                             }}
-                                        />
+                                        >
+                                            {text
+                                                .replace('-', ' ')
+                                                .replace(/(?:^|\s)\S/g, (a) =>
+                                                    a.toUpperCase()
+                                                )}
+                                        </span>
                                     </ListItem>
                                 </a>
                             )

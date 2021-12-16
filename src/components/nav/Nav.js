@@ -14,11 +14,10 @@ export default class Nav extends React.Component {
     render() {
         return !this.isMobile() ? (
             <Tabs
-                // value={}
-                // onChange={}
+                value={false}
                 aria-label='Navigation'
                 centered
-                orientation={this.isMobile() && 'vertical'}
+                orientation={this.isMobile() ? 'vertical' : 'horizontal'}
                 style={{
                     position: 'fixed',
                     top: '0px',
@@ -27,9 +26,50 @@ export default class Nav extends React.Component {
                     zIndex: '100',
                 }}
             >
-                <GradientTab name='About Me' to='#about-me' />
-                <GradientTab name='My Projects' to='#my-projects' />
-                <GradientTab name='Work Experience' to='#work-experience' />
+                {this.isMobile()
+                    ? ['about-me', 'my-projects', 'work-experience'].map(
+                          (text, index) => (
+                              <div
+                                  style={{
+                                      alignItems: 'center',
+                                      display: 'flex',
+                                      justifyContent: 'flex-start',
+                                      paddingRight: '16px',
+                                      verticalAlign: 'middle',
+                                      width: '225px',
+                                      MozBoxAlign: 'center',
+                                      MozBoxPack: 'start',
+                                  }}
+                              >
+                                  <div style={{ margin: '4px 0px' }}>
+                                      <GradientTab
+                                          key={index}
+                                          name={text
+                                              .replace('-', ' ')
+                                              .replace(/(?:^|\s)\S/g, (a) =>
+                                                  a.toUpperCase()
+                                              )}
+                                          to={'#' + text}
+                                          isMobile={this.isMobile()}
+                                      />
+                                  </div>
+                              </div>
+                          )
+                      )
+                    : ['about-me', 'my-projects', 'work-experience'].map(
+                          (text, index) => (
+                              <GradientTab
+                                  key={index}
+                                  name={text
+                                      .replace('-', ' ')
+                                      .replace(/(?:^|\s)\S/g, (a) =>
+                                          a.toUpperCase()
+                                      )}
+                                  to={'#' + text}
+                                  isMobile={this.isMobile()}
+                              />
+                          )
+                      )}
                 {!this.isMobile() && <Contactbtn />}
             </Tabs>
         ) : (

@@ -1,30 +1,45 @@
 // Dependencies
 import React from 'react';
-// Components
-import Tab from '@mui/material/Tab';
 
 const GradientTab = (props) => {
     return (
-        <Tab
-            label={props.name}
+        <a
             href={props.to}
             style={{
-                color: 'white',
-                color: 'transparent',
-                opacity: '1',
-                fontSize: '0.7rem',
+                alignItems: 'center',
+                justifyContent: 'center',
                 marginTop: '10px',
-                background: '#FAA66A',
-                background:
-                    '-webkit-linear-gradient(to right, #FAA66A 0%, #fd63a3 100%)',
-                background:
-                    '-moz-linear-gradient(to right, #FAA66A 0%, #fd63a3 100%)',
-                background:
-                    'linear-gradient(to right, #FAA66A 0%, #fd63a3 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
+                minHeight: '48px',
+                minWidth: '90px',
+                padding: '12px 16px',
+                position: 'relative',
+                textAlign: 'center',
+                textTransform: 'uppercase',
+                verticalAlign: 'middle',
+                textDecoration: 'none',
             }}
-        />
+        >
+            <span
+                style={{
+                    color: 'white',
+                    color: 'transparent',
+                    opacity: '1',
+                    fontSize: '0.7rem',
+                    marginTop: '10px',
+                    background: '#FAA66A',
+                    background:
+                        '-webkit-linear-gradient(to right, #FAA66A 0%, #fd63a3 100%)',
+                    background:
+                        '-moz-linear-gradient(to right, #FAA66A 0%, #fd63a3 100%)',
+                    background:
+                        'linear-gradient(to right, #FAA66A 0%, #fd63a3 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                }}
+            >
+                {props.name}
+            </span>
+        </a>
     );
 };
 
