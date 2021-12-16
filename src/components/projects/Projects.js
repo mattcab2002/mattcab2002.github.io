@@ -153,7 +153,7 @@ export default class Projects extends React.Component {
                         style={{
                             color: 'white',
                             position: 'absolute',
-                            left: '5vw',
+                            left: '2vw',
                             cursor: 'pointer',
                         }}
                         className='arrowToggle'
@@ -185,7 +185,7 @@ export default class Projects extends React.Component {
                         style={{
                             color: 'white',
                             position: 'absolute',
-                            right: '5vw',
+                            right: '2vw',
                             cursor: 'pointer',
                         }}
                         onClick={this.handleRotateForward}

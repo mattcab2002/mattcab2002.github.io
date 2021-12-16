@@ -60,7 +60,25 @@ export default class Work extends React.Component {
                             WebkitTextFillColor: 'transparent',
                         }}
                     >
-                        Work Experience
+                        Work{' '}
+                        {!this.isMobile() ? (
+                            <span>Experience</span>
+                        ) : (
+                            <p
+                                style={{
+                                    marginTop: '8px',
+                                    color: 'transparent',
+                                    opacity: '1',
+                                    backgroundImage:
+                                        'linear-gradient(to right, #faa66a, #fd63a3)',
+                                    backgroundClip: 'text',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent',
+                                }}
+                            >
+                                Experience
+                            </p>
+                        )}
                     </span>
                 </h3>
                 {!this.isMobile() ? (
