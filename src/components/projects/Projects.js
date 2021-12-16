@@ -29,7 +29,7 @@ export default class Projects extends React.Component {
                 },
                 {
                     title: 'Arbitrage XML Text Messaging Service',
-                    imageURL: '/python-arb-project.png',
+                    imageURL: '/python-xml-arb-project.png',
                     description:
                         "Through the use of Python and XML data provider, this project compares the odds of the same sporting event across different sportsbooks in order to find a sure bet. Once found it is communicated through Twilio's text message API to subscribers.",
                     github: 'https://github.com/mattcab2002/arbitrage-repo',
