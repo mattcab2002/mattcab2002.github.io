@@ -25,6 +25,8 @@ const Contact = () => {
                             'linear-gradient(to right, #faa66a, #fd63a3)',
                         backgroundClip: 'text',
                         paddingBottom: '0px',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
                     }}
                 >
                     Me

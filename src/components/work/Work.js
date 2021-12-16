@@ -56,6 +56,8 @@ export default class Work extends React.Component {
                             backgroundImage:
                                 'linear-gradient(to right, #faa66a, #fd63a3)',
                             backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
                         }}
                     >
                         Work Experience

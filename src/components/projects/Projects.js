@@ -86,6 +86,8 @@ export default class Projects extends React.Component {
                             backgroundImage:
                                 'linear-gradient(to right, #faa66a, #fd63a3)',
                             backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
                         }}
                     >
                         Projects
@@ -131,6 +133,8 @@ export default class Projects extends React.Component {
                             backgroundImage:
                                 'linear-gradient(to right, #faa66a, #fd63a3)',
                             backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
                         }}
                     >
                         Projects

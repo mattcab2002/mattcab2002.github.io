@@ -27,6 +27,8 @@ export default class Welcome extends React.Component {
                             backgroundImage:
                                 'linear-gradient(to right, #faa66a, #fd63a3)',
                             backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
                         }}
                     >
                         Matthew
@@ -41,6 +43,8 @@ export default class Welcome extends React.Component {
                             backgroundImage:
                                 'linear-gradient(to right, #faa66a, #fd63a3)',
                             backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
                         }}
                     >
                         software engineering
