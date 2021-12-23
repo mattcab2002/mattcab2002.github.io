@@ -11,7 +11,7 @@ const Contact = () => {
                 textAlign: 'center',
                 color: 'white',
                 background: '#040440',
-                padding: '40px 0px',
+                padding: '60px 0px',
             }}
             id='contact-me'
         >
