@@ -40,7 +40,10 @@ export default class Work extends React.Component {
     };
     render() {
         return (
-            <div id='work-experience' style={{ padding: '40px 0px' }}>
+            <div
+                id='work-experience'
+                style={{ background: '#080444', paddingTop: '80px' }}
+            >
                 <h3
                     style={{
                         textAlign: 'center',
@@ -91,7 +94,7 @@ export default class Work extends React.Component {
                         }}
                     >
                         <div style={{ margin: '0px 40px' }}>
-                            {this.state.jobs.slice(0, 3).map((job) => (
+                            {this.state.jobs.slice(0, 2).map((job) => (
                                 <span key={this.state.jobs.indexOf(job)}>
                                     <WorkElement
                                         position={job.position}
@@ -99,14 +102,15 @@ export default class Work extends React.Component {
                                         company_name={job.company_name}
                                         length={job.length}
                                         size='25vw'
+                                        height='160px'
                                     />
                                 </span>
                             ))}
                         </div>
-                        {this.state.jobs.length > 3 && (
+                        {this.state.jobs.length > 2 && (
                             <div>
                                 {this.state.jobs
-                                    .slice(3, this.state.jobs.length)
+                                    .slice(2, this.state.jobs.length)
                                     .map((job) => (
                                         <span
                                             key={this.state.jobs.indexOf(job)}

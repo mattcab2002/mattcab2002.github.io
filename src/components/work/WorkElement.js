@@ -9,6 +9,7 @@ const WorkElement = (props) => {
                 display: 'flex',
                 margin: '30px 0px',
                 lineHeight: '1.05rem',
+                height: props.height ? props.height : 'auto',
             }}
         >
             <WorkCircle />

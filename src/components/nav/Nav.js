@@ -27,7 +27,7 @@ export default class Nav extends React.Component {
                 }}
             >
                 {this.isMobile()
-                    ? ['about-me', 'my-projects', 'work-experience'].map(
+                    ? ['my-projects', 'my-skills', 'work-experience'].map(
                           (text, index) => (
                               <div
                                   style={{
@@ -56,7 +56,7 @@ export default class Nav extends React.Component {
                               </div>
                           )
                       )
-                    : ['about-me', 'my-projects', 'work-experience'].map(
+                    : ['my-projects', 'my-skills', 'work-experience'].map(
                           (text, index) => (
                               <GradientTab
                                   key={index}

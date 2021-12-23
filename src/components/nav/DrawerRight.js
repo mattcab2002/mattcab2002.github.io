@@ -58,43 +58,45 @@ export default class DrawerRight extends React.Component {
                         />
                     </IconButton>
                     <List style={{ marginTop: '30px' }}>
-                        {['my-projects', 'work-experience', 'contact-me'].map(
-                            (text, index) => (
-                                <a
-                                    href={'#' + text}
-                                    style={{ textDecoration: 'none' }}
+                        {[
+                            'my-projects',
+                            'my-skills',
+                            'work-experience',
+                            'contact-me',
+                        ].map((text, index) => (
+                            <a
+                                href={'#' + text}
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <ListItem
+                                    button
+                                    key={text}
+                                    style={{
+                                        paddingTop: '0px',
+                                        paddingBottom: '0px',
+                                    }}
                                 >
-                                    <ListItem
-                                        button
-                                        key={text}
+                                    <span
                                         style={{
-                                            paddingTop: '0px',
-                                            paddingBottom: '0px',
+                                            color: 'transparent',
+                                            opacity: '1',
+                                            backgroundImage:
+                                                'linear-gradient(to right, #faa66a, #fd63a3)',
+                                            backgroundClip: 'text',
+                                            WebkitBackgroundClip: 'text',
+                                            WebkitTextFillColor: 'transparent',
+                                            margin: '10px 0px',
                                         }}
                                     >
-                                        <span
-                                            style={{
-                                                color: 'transparent',
-                                                opacity: '1',
-                                                backgroundImage:
-                                                    'linear-gradient(to right, #faa66a, #fd63a3)',
-                                                backgroundClip: 'text',
-                                                WebkitBackgroundClip: 'text',
-                                                WebkitTextFillColor:
-                                                    'transparent',
-                                                margin: '10px 0px',
-                                            }}
-                                        >
-                                            {text
-                                                .replace('-', ' ')
-                                                .replace(/(?:^|\s)\S/g, (a) =>
-                                                    a.toUpperCase()
-                                                )}
-                                        </span>
-                                    </ListItem>
-                                </a>
-                            )
-                        )}
+                                        {text
+                                            .replace('-', ' ')
+                                            .replace(/(?:^|\s)\S/g, (a) =>
+                                                a.toUpperCase()
+                                            )}
+                                    </span>
+                                </ListItem>
+                            </a>
+                        ))}
                         <ListItem
                             style={{
                                 display: 'flex',

@@ -10,7 +10,7 @@ const ResumeBtn = () => {
             target='_blank'
             href='/Matthew_Cabrals_Resume.pdf'
             download='/Matthew_Cabrals_Resume.pdf'
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: 'none', color: 'transparent' }}
         >
             <Button
                 variant='outlined'
