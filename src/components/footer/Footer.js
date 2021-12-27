@@ -10,7 +10,7 @@ const Footer = () => {
                 background: '#080444',
             }}
         >
-            <span style={{ fontSize: '0.7rem' }}>
+            <span style={{ fontSize: '0.6rem' }}>
                 Inspired by the following{' '}
                 <a
                     href='https://dribbble.com/shots/16167163-Portfolio-Website-Design?utm_source=Clipboard_Shot&utm_campaign=mou_mouli&utm_content=Portfolio%20Website%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mou_mouli&utm_content=Portfolio%20Website%20Design&utm_medium=Social_Share'
