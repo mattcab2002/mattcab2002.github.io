@@ -70,8 +70,8 @@ export default class Tiles extends React.Component {
             ],
         };
     }
-    isMobile = () => {
-        return window.innerWidth < 768;
+    is1400 = () => {
+        return window.innerWidth < 1400;
     };
     handleRotateForward() {
         this.setState((prevState) => {
@@ -100,7 +100,7 @@ export default class Tiles extends React.Component {
         });
     }
     render() {
-        return !this.isMobile() ? (
+        return !this.is1400() ? (
             <div id='my-skills' style={{ paddingTop: '60px' }}>
                 <h3
                     style={{
@@ -126,16 +126,17 @@ export default class Tiles extends React.Component {
                 <div style={{ marginTop: '80px' }}>
                     <div
                         style={{
+                            width: '1400px',
+                            margin: 'auto',
                             display: 'flex',
                             justifyContent: 'space-between',
-                            alignItems: 'center',
-                            padding: '0px 40px',
                         }}
                     >
                         <div style={{ position: 'relative' }}>
                             <img
                                 src='python-logo.png'
                                 alt='Python Logo'
+                                title='Python Logo'
                                 style={{
                                     width: '5rem',
                                     height: '5rem',
@@ -169,6 +170,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='java-logo.png'
                                 alt='Java Logo'
+                                title='Java Logo'
                                 style={{
                                     width: '5rem',
                                     height: '5rem',
@@ -202,6 +204,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='html-logo.png'
                                 alt='HTML Logo'
+                                title='HTML Logo'
                                 style={{
                                     width: '5rem',
                                     height: '5rem',
@@ -235,6 +238,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='css-logo.png'
                                 alt='CSS Logo'
+                                title='CSS Logo'
                                 style={{
                                     width: '4rem',
                                     height: '5rem',
@@ -268,6 +272,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='javascript-logo.png'
                                 alt='Javascript Logo'
+                                title='Javascript Logo'
                                 style={{
                                     width: '4rem',
                                     height: '4rem',
@@ -301,10 +306,10 @@ export default class Tiles extends React.Component {
 
                     <div
                         style={{
+                            width: '1110px',
+                            margin: 'auto',
                             display: 'flex',
                             justifyContent: 'space-between',
-                            alignItems: 'center',
-                            padding: '0px 185px',
                             position: 'relative',
                             top: '-110px',
                         }}
@@ -313,6 +318,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='react-logo.png'
                                 alt='React Logo'
+                                title='React Logo'
                                 style={{
                                     width: '5rem',
                                     height: '4.5rem',
@@ -346,6 +352,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='c-logo.png'
                                 alt='C Programming Lang. Logo'
+                                title='C Programming Lang. Logo'
                                 style={{
                                     width: '5rem',
                                     height: '5rem',
@@ -380,6 +387,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='selenium-logo.png'
                                 alt='Selenium Logo'
+                                title='Selenium Logo'
                                 style={{
                                     width: '4rem',
                                     height: '4rem',
@@ -413,6 +421,7 @@ export default class Tiles extends React.Component {
                             <img
                                 src='google-firebase-logo.png'
                                 alt='Google Firebase Logo'
+                                title='Google Firebase Logo'
                                 style={{
                                     width: '4rem',
                                     height: '5.5rem',
@@ -501,6 +510,7 @@ export default class Tiles extends React.Component {
                         <img
                             src={this.state.skills[this.state.count].url}
                             alt={this.state.skills[this.state.count].alt}
+                            title={this.state.skills[this.state.count].alt}
                             style={{
                                 width: this.state.skills[this.state.count]
                                     .width,

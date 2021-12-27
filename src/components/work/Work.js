@@ -121,6 +121,7 @@ export default class Work extends React.Component {
                                                 company_name={job.company_name}
                                                 length={job.length}
                                                 size='25vw'
+                                                height='182px'
                                             />
                                         </span>
                                     ))}
