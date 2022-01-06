@@ -14,7 +14,7 @@ export default class Welcome extends React.Component {
                 style={{
                     color: 'white',
                     margin: !this.isMobile() ? '100px 0px' : '150px 0px',
-                    padding: !this.isMobile() && '100px 0px',
+                    padding: !this.isMobile() && '120px 0px',
                     marginLeft: '12vw',
                 }}
             >

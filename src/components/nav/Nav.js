@@ -24,8 +24,27 @@ export default class Nav extends React.Component {
                     width: '100vw',
                     background: '#040440',
                     zIndex: '100',
+                    height: '70px',
                 }}
             >
+                {!this.isMobile() && (
+                    <div
+                        style={{
+                            position: 'absolute',
+                            left: '20px',
+                            top: '3px',
+                        }}
+                    >
+                        <a href='#about-me'>
+                            <img
+                                src='/logo-80.png'
+                                alt="Matthew Cabral's Logo"
+                                width='70'
+                                height='70'
+                            />
+                        </a>
+                    </div>
+                )}
                 {this.isMobile()
                     ? ['my-projects', 'my-skills', 'work-experience'].map(
                           (text, index) => (

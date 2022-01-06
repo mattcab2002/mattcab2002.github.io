@@ -16,7 +16,7 @@ export default class Symbols extends React.Component {
                         height: '420px',
                         width: '90vw',
                         position: 'absolute',
-                        top: '10vh',
+                        top: '18vh',
                         right: '-72vw',
                         transform: 'skew(340deg)',
                         borderBottomLeftRadius: '40px',
