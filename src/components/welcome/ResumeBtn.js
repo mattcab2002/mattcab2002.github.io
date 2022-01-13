@@ -8,8 +8,8 @@ const ResumeBtn = () => {
     return (
         <a
             target='_blank'
-            href='/Matthew_Cabrals_Resume.pdf'
-            download='/Matthew_Cabrals_Resume.pdf'
+            href="/Matthew_Cabral's_Resume.pdf"
+            download="/Matthew_Cabral's_Resume.pdf"
             style={{ textDecoration: 'none', color: 'transparent' }}
         >
             <Button
