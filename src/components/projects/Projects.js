@@ -15,7 +15,7 @@ export default class Projects extends React.Component {
             projects: [
                 {
                     title: 'PictoDocReader',
-                    imageURL: '/pictodocreader.png',
+                    imageURL: '/PictoDocReader.png',
                     description:
                         'As a part of McHacks 9, we created a Dash web application that can locate an image within a pdf file uploaded to the application. Used previous knowledge regarding time complexity to optimize search algorithms for finding the images. Used Google Cloud to store all assets uploaded to the application in order to back test in the future. Awarded the “Teachers Pet” award for the best project relating to the education sector.',
                     devpost: 'https://devpost.com/software/pictodocreader',
