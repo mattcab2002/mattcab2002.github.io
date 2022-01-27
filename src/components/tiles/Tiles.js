@@ -426,8 +426,8 @@ export default class Tiles extends React.Component {
                                     width: '4rem',
                                     height: '4rem',
                                     position: 'absolute',
-                                    top: '1.5rem',
-                                    left: '1.5rem',
+                                    top: '2.5rem',
+                                    left: '2.5rem',
                                 }}
                             />
                             <HexagonIcon
