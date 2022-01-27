@@ -62,10 +62,10 @@ export default class Tiles extends React.Component {
                     height: '4rem',
                 },
                 {
-                    url: 'google-firebase-logo.png',
-                    alt: 'Google Firebase Logo',
+                    url: 'typescript-logo.png',
+                    alt: 'TypeScript Logo',
                     width: '4rem',
-                    height: '5.5rem',
+                    height: '4rem',
                 },
             ],
         };
