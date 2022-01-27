@@ -419,15 +419,15 @@ export default class Tiles extends React.Component {
                         </div>
                         <div style={{ position: 'relative' }}>
                             <img
-                                src='google-firebase-logo.png'
-                                alt='Google Firebase Logo'
-                                title='Google Firebase Logo'
+                                src='typescript-logo.png'
+                                alt='TypeScript Logo'
+                                title='TypeScript Logo'
                                 style={{
                                     width: '4rem',
-                                    height: '5.5rem',
+                                    height: '4rem',
                                     position: 'absolute',
-                                    top: '1.75rem',
-                                    left: '2.5rem',
+                                    top: '1.5rem',
+                                    left: '1.5rem',
                                 }}
                             />
                             <HexagonIcon
