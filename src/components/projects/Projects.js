@@ -14,16 +14,18 @@ export default class Projects extends React.Component {
             hover: false,
             projects: [
                 {
-                    title: 'Arbitrage Java Selenium Project',
-                    imageURL: '/java-arb-project.png',
+                    title: 'PictoDocReader',
+                    imageURL: '/pictodocreader.png',
                     description:
-                        'Through the use of Twitters API and Selenium Web Scraping this project listens for new information regarding injured players via tweets and checks if popular sportsbooks have adjusted their odds accordingly. I am currently working on this project.',
+                        'As a part of McHacks 9, we created a Dash web application that can locate an image within a pdf file uploaded to the application. Used previous knowledge regarding time complexity to optimize search algorithms for finding the images. Used Google Cloud to store all assets uploaded to the application in order to back test in the future. Awarded the “Teachers Pet” award for the best project relating to the education sector.',
+                    devpost: 'https://devpost.com/software/pictodocreader',
+                    github: 'https://github.com/mattcab2002/PictoDocReader',
                 },
                 {
                     title: 'LIA : An Interactive Memory Aid Assistant',
                     imageURL: '/lia-devpost-project.png',
                     description:
-                        'As a part of NewHacks 2021, in under 24 hours, our goal was to use artificial intelligence with python and a chat service through form of a web application to create an interactive memory aid for those who are suffering from memory loss.',
+                        'As a part of NewHacks 2021, we created a medium for those suffering from memory loss to maintain everyday conversations. Used artificial intelligence and a chat service to facilitate the communication. Used Python for the AI and MongoDB, React, and Node for the web application/chat service. Awarded the “Best Health Hack” award for the best project that solves a real-world health problem.',
                     devpost: 'https://devpost.com/software/lia',
                     github: 'https://github.com/mattcab2002/Liassistant',
                 },
