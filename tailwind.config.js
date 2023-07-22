@@ -5,6 +5,18 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  // safelist: [
+  //   {
+  //     pattern: /grid-cols-/,
+  //     variants: ['sm']
+  //   },
+  //   {
+  //     pattern: /text-/
+  //   },
+  //   {
+  //     pattern: /border-/
+  //   }
+  // ],
   theme: {
     extend: {
       backgroundImage: {
